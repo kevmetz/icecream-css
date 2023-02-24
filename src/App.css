@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-layout {
+  background-color: rgba(131, 131, 115, 0.335);
+  background-color: pink;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header {
+  background-color: black;
+  color: teal;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.app-footer {
+  background-color: black;
+  color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: bottom;
+  position: sticky;
+  bottom: 0;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-main {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsl(66, 50%, 50%);
+}
+
+.app-main {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsl(66, 50%, 50%);
+}
+
+.nav-parent-container {
+  background-color: hsl(33, 50%, 50%);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.nav-item {
+  padding-right: 1rem;
+}
+
+.pc1 {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.flex-page {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1rem;
+  padding: 1rem;
+
+  /* using outline to indicate padding, margin not drawn*/
+  outline: solid 1rem beige;
+  outline-offset: calc(0px - 1rem - 1px);
+
+  border: solid 1px black;
+
+  justify-content: space-evenly;
+}
+
+.flex-parent {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
+
+  /* using border to mimick padding*/
+  padding: 0rem;
+  border: solid 1rem hsl(233, 50%, 80%);
+
+  /* using outline to indicate margin*/
+  margin: 1rem;
+  outline: solid 1rem hsl(233, 50%, 90%);
+  outline-offset: 0px;
+
+  justify-content: space-evenly;
+}
+
+
+.flex-child {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+
+  background-color: hsl(301, 50%, 70%);
+
+  /* using border to mimick padding*/
+  padding: 0rem;
+  border: solid 1rem hsl(301, 50%, 80%);
+
+  /* using outline to indicate margin*/
+  margin: 1rem;
+  outline: solid 1rem hsl(301, 50%, 90%);
+  outline-offset: 0rem;
+
+
+  min-width: 64px;
+  min-height: 64px;
+
+  box-sizing: content-box;
 }
